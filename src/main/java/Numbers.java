@@ -1,4 +1,3 @@
-import java.awt.*;
 import java.util.*;
 import com.farida.operations.*;
 
@@ -15,7 +14,7 @@ public class Numbers {
         System.out.println("3 - Multiply");
         System.out.println("4 - Divide");
         int operationType = scan.nextInt();
-        Operation operation = createOperation(operationType);
+        VarKeeper operation = createOperation(operationType);
         System.out.println("Input first number:");
         operation.addLeft(scan.nextInt());
         System.out.println("Input second number:");
@@ -23,7 +22,7 @@ public class Numbers {
         System.out.println("The result is: " + operation.perform());
     }
 
-    public static Operation createOperation(int operationType) {
+    public static VarKeeper createOperation(int operationType) {
         if (operationType == 1) {
             return new Sum();
         }

@@ -1,6 +1,6 @@
 package com.farida.operations;
 
-public class Division extends Operation {
+public class Division extends VarKeeper {
 
     @Override
     public long perform() {

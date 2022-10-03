@@ -5,8 +5,7 @@ public class Numbers {
     // filename change suggested
     
     public static void main(String[] args) {
-        /* System.out.print("Hello");
-        invoke(", World"); **/
+
         Scanner scan = new Scanner(System.in);
         System.out.println("Which operation you'd like to process:");
         System.out.println("1 - Sum");
@@ -20,14 +19,16 @@ public class Numbers {
         System.out.println("Input second number:");
         operation.addRight(scan.nextInt());
         System.out.println("The result is: " + operation.perform());
+        System.out.println("operation instance of Operation: " + (operation instanceof Sum));
     }
 
     public static VarKeeper createOperation(int operationType) {
+
         if (operationType == 1) {
             return new Sum();
         }
         else if (operationType == 2) {
-            return new Differ();
+            return new Subtraction();
         }
         else if (operationType == 3) {
             return new Multipl();
@@ -43,14 +44,3 @@ public class Numbers {
     /* private static void invoke(String text) {
         System.out.println(text); **/
 }
-// inner class for test
-
-    // class definition for variable
-
-    // Classname.getclass or class
-
-    // method signature
-
-    // Instance of
-    //+ comment change suggestion
-

@@ -1,6 +1,6 @@
 package com.farida.operations;
 
-public class Differ extends VarKeeper {
+public class Subtraction extends VarKeeper {
 
     @Override
     public long perform() {

@@ -5,4 +5,8 @@ public class Multipl extends VarKeeper {
     public long perform() {
         return aLeft * bRight;
     }
+
+    static class MultDiv {
+
+    }
 }

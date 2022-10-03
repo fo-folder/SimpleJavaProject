@@ -6,4 +6,17 @@ public class Division extends VarKeeper {
     public long perform() {
         return aLeft / bRight;
     }
+
+    static class MultDiv {
+
+    }
+
+    public class inn {
+
+    }
+    /*
+    public class InnerCheck {
+
+    }
+    */
 }

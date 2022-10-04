@@ -1,7 +1,7 @@
 import java.util.*;
 import com.farida.operations.*;
 
-public class Numbers {
+public class Calculator {
     // filename change suggested
     
     public static void main(String[] args) {

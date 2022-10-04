@@ -1,7 +1,7 @@
 package com.farida.operations;
 
 
-public abstract class VarKeeper implements Operation {
+public abstract class VarKeep implements Operations {
     protected long aLeft;
     protected long bRight;
 

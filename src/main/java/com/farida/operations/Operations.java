@@ -1,6 +1,6 @@
 package com.farida.operations;
 
-public interface Operation {
+public interface Operations {
     long perform();
 
 }

@@ -14,6 +14,10 @@ public class Calculator {
         System.out.println("3 - Multiply");
         System.out.println("4 - Divide");
         int operationType = scan.nextInt();
+        Operations operations;
+        List<? extends Operations> list = new ArrayList<>();
+        List<? super Operations> list2 = new ArrayList<>();
+        Class<Operations> clazz = Operations.class;
         VarKeep operation = OperationsFactory.create(operationType);
         System.out.println("Input first number:");
         operation.addLeft(scan.nextInt());
@@ -21,6 +25,11 @@ public class Calculator {
         operation.addRight(scan.nextInt());
         System.out.println("The result is: " + operation.perform());
         System.out.println("operation instance of Operation: " + (operation instanceof Summarize));
+    }
+
+    public static Operations dummyMethod(Operations input) { // method signature with an interface
+        Operations aaa;
+        return null;
     }
 
 // method for test

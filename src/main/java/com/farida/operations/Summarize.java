@@ -18,4 +18,6 @@ public class Summarize extends VarKeep {
   public void setSummer(Summer S) {
         new Summer();
     }
+
+    Operations.UnderOperations interfaceOperations;// call for inner interface from Operations
 }

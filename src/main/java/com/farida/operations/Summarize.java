@@ -1,5 +1,5 @@
 package com.farida.operations;
-public class Sum extends VarKeep {
+public class Summarize extends VarKeep {
 
     @Override
     public long perform() {
